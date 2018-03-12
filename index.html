@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>AirZaar</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="http://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+	<link rel="stylesheet" href="css/bootstrap-select.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/responsive.css">
+	<script src="js/modernizr-custom.js"></script>
+	<!--[if lt IE 9]>
+	<script src="js/html5shiv.js"></script>
+	<![endif]-->
+</head>
+<body>
+	<div class="wrapper clearfix">
+		<header class="header clearfix">
+			<h1 class="logo">
+				<a href="index.html"><img src="images/logo_AirZaar.png" alt=""></a>
+			</h1>
+			<a href="javascript:void(0);" class="btnMobileNav"></a>
+			<ul class="topNav">
+				<li><a class="activeNav" href="#">DRONE OPERATIONS</a></li>
+				<li><a href="#">REQUEST PIPELINE</a></li>
+				<li><a href="#">PROCESS DATA</a></li>
+			</ul>
+			<div class="user">
+				<span></span>John Mathews
+			</div>
+		</header>
+		<div class="mainContent clearfix">
+			<a href="javascript:void(0);" class="btnLeftNav"><span></span></a>
+			<div class="dvLeft">
+				<ul class="leftNav clearfix">
+					<li><a class="Flights" href="#"><span></span>Flights</a></li>
+					<li><a class="Drone" href="#"><span></span>Drone/UAV’s</a></li>
+					<li><a class="Batteries" href="#"><span></span>Batteries</a></li>
+					<li><a class="Equipment" href="#"><span></span>Equipment</a></li>
+					<li><a class="Incidents" href="#"><span></span>Incidents</a></li>
+					<li><a class="Maintenance" href="#"><span></span>Maintenance</a></li>
+					<li><a class="Documents" href="#"><span></span>Documents</a></li>
+				</ul>
+			</div>
+			<div class="dvRight">
+				<div class="dvRow clearfix">
+					<h3>Total flight time: 0 hrs 4 min</h3>
+					<a href="request-drone-service.html" class="btnRequestDrone">Request Drone Service</a>
+				</div>
+				<div class="components clearfix">
+					<div class="row clearfix">
+						<div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+							<div class="bxComponent">
+								<h4>00</h4>
+								<div class="dvOperations"><span class="icon iconFlight"></span>Flights</div>
+								<a class="btnOperation" href="javascript:void(0);" data-toggle="modal" data-target="#myModal">Add Flights</a>
+								<dv class="shadow"></dv>
+							</div>
+						</div>
+						<div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+							<div class="bxComponent">
+								<h4>01</h4>
+								<div class="dvOperations"><span class="icon iconDrone"></span>Drone</div>
+								<a class="btnOperation" href="#">Add Drone</a>
+								<dv class="shadow"></dv>
+							</div>
+						</div>
+						<div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+							<div class="bxComponent">
+								<h4>05</h4>
+								<div class="dvOperations"><span class="icon iconBattery"></span>Battery</div>
+								<a class="btnOperation" href="#">Add Battery</a>
+								<dv class="shadow"></dv>
+							</div>
+						</div>
+						<div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+							<div class="bxComponent">
+								<h4>04</h4>
+								<div class="dvOperations"><span class="icon iconEquipment"></span>Equipment</div>
+								<a class="btnOperation" href="#">Add Equipment</a>
+								<dv class="shadow"></dv>
+							</div>
+						</div>
+						<div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+							<div class="bxComponent">
+								<h4>10</h4>
+								<div class="dvOperations"><span class="icon iconIncidents"></span>Incidents</div>
+								<a class="btnOperation" href="#">Add Incidents</a>
+								<dv class="shadow"></dv>
+							</div>
+						</div>
+						<div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+							<div class="bxComponent">
+								<h4>02</h4>
+								<div class="dvOperations"><span class="icon iconMaintenance"></span>Maintenance</div>
+								<a class="btnOperation" href="#">Add Maintenance</a>
+								<dv class="shadow"></dv>
+							</div>
+						</div>
+						<div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+							<div class="bxComponent">
+								<h4>02</h4>
+								<div class="dvOperations"><span class="icon iconDocument"></span>Document</div>
+								<a class="btnOperation" href="#">Add Document</a>
+								<dv class="shadow"></dv>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Modal -->
+	<div id="myModal" class="modal fade" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<a class="btnClose" href="javascript:void(0);" data-dismiss="modal"><img src="images/closeIcon.png" alt=""></a>
+					<h4 class="modal-title">Add Flight</h4>
+				</div>
+				<div class="formCont clearfix">
+					<div class="row clearfix">
+						<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+							<div class="column clearfix">
+								<label class="lblBlock">Pilot Info</label>
+								<textarea class="txtArea" name="" id="" cols="30" rows="10"></textarea>
+							</div>
+						</div>
+					</div>
+					<div class="row clearfix">
+						<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+							<div class="column clearfix">
+								<label class="lblBlock">Date</label>
+								<input class="txtInput datePick" type="text" name="" id="datepicker">
+							</div>
+						</div>
+						<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+							<div class="column clearfix">
+								<label class="lblBlock">Duration</label>
+								<input class="txtInput" type="text" name="" id="">
+							</div>
+						</div>
+						<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+							<div class="column clearfix">
+								<label class="lblBlock">Type</label>
+								<input class="txtInput" type="text" name="" id="">
+							</div>
+						</div>
+					</div>
+					<div class="row clearfix">
+						<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+							<div class="column clearfix">
+								<label class="lblBlock">Name</label>
+								<input class="txtInput" type="text" name="" id="">
+							</div>
+						</div>
+						<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+							<div class="column clearfix">
+								<label class="lblBlock">Drone</label>
+								<select class="txtSelect selectpicker">
+									<option value="">Option1</option>
+									<option value="">Option2</option>
+									<option value="">Option3</option>
+									<option value="">Option4</option>
+									<option value="">Option5</option>
+					            </select>
+				            </div>
+						</div>
+					</div>
+					<div class="row clearfix">
+						<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+							<div class="column clearfix">
+								<label class="lblBlock">Project</label>
+								<select class="txtSelect selectpicker">
+									<option value="">Option1</option>
+									<option value="">Option2</option>
+									<option value="">Option3</option>
+									<option value="">Option4</option>
+									<option value="">Option5</option>
+					            </select>
+				            </div>
+						</div>
+						<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+							<div class="column clearfix">
+								<label class="lblBlock">Location</label>
+								<input class="txtInput" type="text" name="" id="">
+							</div>
+						</div>
+					</div>
+					<div class="row clearfix alignCenter">
+						<div class="column clearfix">
+							<a class="btnSave" href="#">Save</a>
+							<a class="btnCancel" href="#">Cancel</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="js/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/bootstrap-select.js"></script>
+	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+	<script src="js/jquery.airZaar.js"></script>
+	<script>
+	$(function(){
+		$("#datepicker").datepicker();
+	});
+	</script>
+</body>
+</html>

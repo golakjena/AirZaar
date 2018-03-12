@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>AirZaar</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/bootstrap-select.css">
+	<link rel="stylesheet" href="css/build.css">
+	<link rel="stylesheet" href="css/font-awesome.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/responsive.css">
+	<script src="js/modernizr-custom.js"></script>
+	<!--[if lt IE 9]>
+	<script src="js/html5shiv.js"></script>
+	<![endif]-->
+</head>
+<body>
+	<div class="wrapper clearfix">
+		<div class="searchHeader clearfix">
+			<h3><a href="#">Buckley Central Stone Wall</a></h3>
+			<span class="location">Troy Missouri</span>
+		</div>
+		<div class="innerContainer clearfix">
+			<div class="dvShotPlanning">
+				<div class="dvShotPlanningInner clearfix">
+					<a href="javascript:void(0);" class="btnSideBar"><span></span></a>
+					<a class="btnCloseSlidebar" href="javascript:void(0);"><img src="images/popClose.png" alt=""></a>
+					<a class="btnBack" id="btnBack" href="javascript:void(0);">Shot <br>Planing</a>
+					<!--Shot Planning Starts-->
+					<div id="dvShotPlaning" class="dvEditRow clearfix">
+						<h3>Shot Planning</h3>
+						<div class="dvRowsOuter clearfix">
+							<div class="dvRows clearfix">
+								<div class="rowsLeft">Rows</div>
+								<div class="rowsRight"><a id="btnEditRow" href="#EditRow">Edit Rows</a></div>
+							</div>
+							<select class="selectpicker">
+								<option>A-B Line</option>
+							</select>
+						</div>
+						<div class="dvShotHole clearfix">
+							<span>Shothole List</span>
+							<a id="btnViewAll" href="#dvAllShotholes">View All</a>
+						</div>
+						<h4>Please click on any hole list to set the <span>position</span> and <span>angle</span> below</h4>
+						<div class="dvHoleList clearfix">
+							<div class="dvHole"><a href="#dvHoleSetting">Hole 1</a> <span></span></div>
+							<div class="dvHole activeHole"><a href="#dvHoleSetting">Hole 2</a> <span></span></div>
+							<div class="dvHole"><a href="#dvHoleSetting">Hole 3</a> <span></span></div>
+							<div class="dvHole"><a href="#dvHoleSetting">Hole 4</a> <span></span></div>
+							<div class="dvHole"><a href="#dvHoleSetting">Hole 5</a> <span></span></div>
+							<div class="dvHole"><a href="#dvHoleSetting">Hole 6</a> <span></span></div>
+							<div class="dvHole"><a href="#dvHoleSetting">Hole 7</a> <span></span></div>
+							<div class="dvHole"><a href="#dvHoleSetting">Hole 8</a> <span></span></div>
+							<div class="dvHole"><a href="#dvHoleSetting">Hole 9</a> <span></span></div>
+						</div>
+						<div class="dvAddNewHole clearfix">
+							<h4>Add New Hole</h4>
+							<div class="addHoleRow clearfix">
+								<label class="lbl">Number of holes</label>
+								<input class="txtInput" type="text" name="" id="">
+							</div>
+							<div class="addHoleRow clearfix">
+								<label class="lbl">Hole Spacing</label>
+								<input class="txtInput M" type="text" name="" id="">
+							</div>
+							<div class="addHoleRow clearfix">
+								<a href="#" class="btnPlace fLeft">Place Left</a>
+								<a href="#" class="btnPlace fRight">Place Right</a>
+							</div>
+							<div class="addHoleRow clearfix">
+								<a href="#RunShot" id="btnRunShot" class="btnRunShot">Run Shots</a>
+							</div>
+						</div>
+					</div>
+					<!--Shot Planning End-->
+					<!--Shot HoleSetting Starts-->
+					<div id="dvHoleSetting" class="dvEditRow clearfix">
+						<h3>Hole Settings</h3>
+						<div class="dvShotHole clearfix">
+							<span>Shothole List</span>
+							<a href="javascript:void(0);">View All</a>
+						</div>
+						<h4>Please click on any hole list to set the <span>position</span> and <span>angle</span> below</h4>
+						<div class="dvHoleList clearfix">
+							<div class="dvHole">Hole 1 <span></span></div>
+							<div class="dvHole activeHole">Hole 2 <span></span></div>
+							<div class="dvHole">Hole 3 <span></span></div>
+							<div class="dvHole">Hole 4 <span></span></div>
+							<div class="dvHole">Hole 5 <span></span></div>
+							<div class="dvHole">Hole 6 <span></span></div>
+							<div class="dvHole">Hole 7 <span></span></div>
+							<div class="dvHole">Hole 8 <span></span></div>
+							<div class="dvHole">Hole 9 <span></span></div>
+						</div>
+						<div class="settingsTab clearfix">
+							<ul>
+								<li><a href="#Position">Position</a></li>
+								<li><a href="#Angle">Angle</a></li>
+							</ul>
+						</div>
+						<div class="dvShotSetting clearfix">
+							<div id="Position" class="settingsAccord clearfix">
+								<div class="distance clearfix">
+									<div class="txtLeft">Distance from <span>line start:</span> </div>
+									<div class="txtRight">1 m</div>
+								</div>
+								<div class="row clearfix">
+									<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+										<label class="lbl">Along shotline</label>
+										<input class="bxInput" type="text" name="" id="">
+									</div>
+									<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+										<label class="lbl">Away from shotline</label>
+										<input class="bxInput" type="text" name="" id="">
+									</div>
+								</div>
+								<div class="distance clearfix">
+									<div class="txtLeft">Distance from <span>line end:</span> </div>
+									<div class="txtRight">1 m</div>
+								</div>
+								<div class="row clearfix">
+									<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+										<label class="lbl">Along shotline</label>
+										<input class="bxInput" type="text" name="" id="">
+									</div>
+									<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+										<label class="lbl">Away from shotline</label>
+										<input class="bxInput" type="text" name="" id="">
+									</div>
+								</div>
+								<div class="distance clearfix">
+									<div class="txtLeft">Distance from <span>Hole 1:</span> </div>
+									<div class="txtRight">1 m</div>
+								</div>
+								<div class="row clearfix">
+									<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+										<label class="lbl">Along shotline</label>
+										<input class="bxInput" type="text" name="" id="">
+									</div>
+									<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+										<label class="lbl">Away from shotline</label>
+										<input class="bxInput" type="text" name="" id="">
+									</div>
+								</div>
+								<div class="distance clearfix">
+									<div class="txtLeft">Distance from <span>Hole 3:</span> </div>
+									<div class="txtRight">1 m</div>
+								</div>
+								<div class="row clearfix">
+									<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+										<label class="lbl">Along shotline</label>
+										<input class="bxInput" type="text" name="" id="">
+									</div>
+									<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+										<label class="lbl">Away from shotline</label>
+										<input class="bxInput" type="text" name="" id="">
+									</div>
+								</div>
+							</div>
+							<div id="Angle" class="settingsAccord clearfix">
+								<div class="distance clearfix">
+									<div class="txtLeft">Distance from <span>line start:</span> </div>
+									<div class="txtRight">1 m</div>
+								</div>
+								<div class="row clearfix">
+									<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+										<label class="lbl">Along shotline</label>
+										<input class="bxInput" type="text" name="" id="">
+									</div>
+									<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+										<label class="lbl">Away from shotline</label>
+										<input class="bxInput" type="text" name="" id="">
+									</div>
+								</div>
+								<div class="distance clearfix">
+									<div class="txtLeft">Distance from <span>line end:</span> </div>
+									<div class="txtRight">1 m</div>
+								</div>
+								<div class="row clearfix">
+									<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+										<label class="lbl">Along shotline</label>
+										<input class="bxInput" type="text" name="" id="">
+									</div>
+									<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+										<label class="lbl">Away from shotline</label>
+										<input class="bxInput" type="text" name="" id="">
+									</div>
+								</div>
+								<div class="distance clearfix">
+									<div class="txtLeft">Distance from <span>Hole 1:</span> </div>
+									<div class="txtRight">1 m</div>
+								</div>
+								<div class="row clearfix">
+									<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+										<label class="lbl">Along shotline</label>
+										<input class="bxInput" type="text" name="" id="">
+									</div>
+									<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+										<label class="lbl">Away from shotline</label>
+										<input class="bxInput" type="text" name="" id="">
+									</div>
+								</div>
+								<div class="distance clearfix">
+									<div class="txtLeft">Distance from <span>Hole 3:</span> </div>
+									<div class="txtRight">1 m</div>
+								</div>
+								<div class="row clearfix">
+									<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+										<label class="lbl">Along shotline</label>
+										<input class="bxInput" type="text" name="" id="">
+									</div>
+									<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+										<label class="lbl">Away from shotline</label>
+										<input class="bxInput" type="text" name="" id="">
+									</div>
+								</div>
+							</div>
+						</div> 
+					</div>
+					<!--Shot HoleSetting End-->
+					<!--All Shotholes Starts-->
+					<div id="dvAllShotholes" class="dvEditRow clearfix">
+						<h3>All Shotholes</h3>
+						<h4>Please click on any hole list to set the <span>position</span> and <span>angle</span> below</h4>
+						<div class="dvHoleList allHole clearfix">
+							<div class="dvHole">Hole 1 <span></span></div>
+							<div class="dvHole">Hole 2 <span></span></div>
+							<div class="dvHole">Hole 3 <span></span></div>
+							<div class="dvHole">Hole 4 <span></span></div>
+							<div class="dvHole">Hole 5 <span></span></div>
+							<div class="dvHole">Hole 6 <span></span></div>
+							<div class="dvHole">Hole 7 <span></span></div>
+							<div class="dvHole">Hole 8 <span></span></div>
+							<div class="dvHole">Hole 9 <span></span></div>
+							<div class="dvHole">Hole 10 <span></span></div>
+							<div class="dvHole">Hole 11 <span></span></div>
+							<div class="dvHole">Hole 12 <span></span></div>
+							<div class="dvHole">Hole 13 <span></span></div>
+							<div class="dvHole">Hole 14 <span></span></div>
+							<div class="dvHole">Hole 15 <span></span></div>
+							<div class="dvHole">Hole 16 <span></span></div>
+							<div class="dvHole">Hole 17 <span></span></div>
+							<div class="dvHole">Hole 18 <span></span></div>
+							<div class="dvHole">Hole 19 <span></span></div>
+							<div class="dvHole">Hole 20 <span></span></div>
+							<div class="dvHole">Hole 21 <span></span></div>
+						</div>
+					</div>
+					<!--All Shotholes End-->
+					<!--Edit Rows Starts-->
+					<div id="EditRow" class="dvEditRow clearfix">
+						<h3>Edit Rows</h3>
+						<p>Please click on any row to set the position below</p>
+						<div class="dvHoleList clearfix">
+							<div class="dvHole">Row 1 <span></span></div>
+							<div class="dvHole activeHole">Row 2 <span></span></div>
+							<div class="dvHole">Row 3 <span></span></div>
+							<div class="dvHole">Row 4 <span></span></div>
+							<div class="dvHole">Row 5 <span></span></div>
+							<div class="dvHole">Row 6 <span></span></div>
+						</div>
+						<div class="dvAddNewHole clearfix">
+							<h4>Add New Row</h4>
+							<div class="addHoleRow clearfix">
+								<label class="lbl">Along shotline</label>
+								<input class="txtInput M" type="text" name="" id="">
+							</div>
+							<div class="addHoleRow clearfix">
+								<label class="lbl">Away from shotline</label>
+								<input class="txtInput M" type="text" name="" id="">
+							</div>
+							<div class="addHoleRow clearfix">
+								<a href="#" class="btnPlace fLeft">Place Row</a>
+								<a href="#" class="btnPlace fRight">Copy Row</a>
+							</div>
+							<div class="addHoleRow clearfix">
+								<div class="checkbox">
+			                        <input id="stagger" class="styled" type="checkbox">
+			                        <label class="checkbox" for="stagger">
+				                    	Stagger new line?
+				                    </label>
+				                    <p style="padding: 0 0 0 5px;">When selected, a new line will stagger its position along the A-B line.</p>
+			                    </div>
+							</div>
+						</div>
+					</div>
+					<!--Edit Rows End-->
+					<!--Run Shots Start-->
+					<div id="RunShot" class="dvEditRow clearfix">
+						<h3>Run Shot</h3>
+						<div class="checkbox clearfix">
+	                        <input id="synchronize" class="styled" type="checkbox">
+	                        <label class="checkbox" for="synchronize">
+		                    	Auto synchronize elevations?
+		                    </label>
+		                    <p style="padding: 0 0 0 5px;">When selected, holes will update their elevations automatically after moving. On larger models, this process becomes significantly more complex and can result in increased lag.</p>
+	                    </div>
+						<div class="dvAddNewHole clearfix">
+							<div class="addHoleRow clearfix">
+								<label class="lbl">Set number of spaced sample points</label>
+								<select class="selectpicker">
+									<option>Select</option>
+								</select>
+							</div>
+							<div class="row addHoleRow clearfix">
+								<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+									<label class="lbl">Sample Point<br><br></label>
+									<input class="txtInput" type="text" name="" id="">
+								</div>
+								<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+									<label class="lbl">Distance between points</label>
+									<input class="txtInput" type="text" name="" id="">
+								</div>
+							</div>
+							<div class="addHoleRow clearfix">
+								<a href="#" class="btnRunShot">Run Shot</a>
+							</div>
+							<div class="addHoleRow clearfix">
+								<a href="#" class="btnPlace fLeft">Save Shot</a>
+								<a href="#" class="btnPlace fRight">Reset Shot</a>
+							</div>
+							<div class="addHoleRow clearfix">
+								<a href="#" class="btnPlace fLeft">Drill Plan View</a>
+								<div class="dvExport">
+									<select class="selectpicker export">
+										<option>Export...</option>
+									</select>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!--Run Shots End-->
+				</div>
+			</div>
+			<div class="dvmapView">
+				<ul class="mapView">
+					<li><a class="activeView" href="#">2D Map</a></li>
+					<li><a href="#">3D Map</a></li>
+				</ul>
+				<a class="mapOptions" href="#"><img src="images/mapOptions.png" alt=""></a>
+			</div>
+			<iframe class="processDataMap" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14017.88367382519!2d77.07567357374093!3d28.555618519168867!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d1b9993a248df%3A0x28f954cbf617fd67!2sTerminal+3%2C+Indira+Gandhi+International+Airport%2C+New+Delhi%2C+Delhi+110037!5e0!3m2!1sen!2sin!4v1481772715816" width="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
+		</div>
+	</div>
+	<script src="js/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/bootstrap-select.js"></script>
+	<script src="js/jquery.airZaar.js"></script>
+	<script>
+		$(function(){
+			$(".settingsTab ul li a").eq(0).addClass("activeSetting");
+			$(".settingsAccord").eq(0).slideDown();
+			$(".settingsTab ul li a").each(function(){
+				$(this).on("click", function(){
+					var target = $(this).attr("href");
+					$(".activeSetting").removeClass("activeSetting");
+					$(this).addClass("activeSetting");
+					$(".settingsAccord").slideUp();
+					$(target).slideDown();
+					return false;
+				});
+			});
+
+
+			$("#btnEditRow").on("click", function(){
+				$("#btnBack").fadeIn();
+				var target = $(this).attr("href");
+				$(".dvEditRow").slideUp(300);
+				$(target).slideDown(300);
+				$("#dvShotPlaning").slideUp(300);
+				return false;
+			});
+
+			$("#btnViewAll").on("click", function(){
+				$("#btnBack").fadeIn();
+				var target = $(this).attr("href");
+				$(".dvEditRow").slideUp(300);
+				$(target).slideDown(300);
+				$("#dvShotPlaning").slideUp(300);
+				return false;
+			});
+			$("#btnRunShot").on("click", function(){
+				$("#btnBack").fadeIn();
+				var target = $(this).attr("href");
+				$(".dvEditRow").slideUp(300);
+				$(target).slideDown(300);
+				$("#dvShotPlaning").slideUp(300);
+				return false;
+			});
+			$(".dvHole a").on("click", function(){
+				$("#btnBack").fadeIn();
+				var target = $(this).attr("href");
+				$(".dvEditRow").slideUp(300);
+				$(target).slideDown(300);
+				$("#dvShotPlaning").slideUp(300);
+				return false;
+			});
+
+			$("#btnBack").on("click", function(){
+				$("#btnBack").fadeOut();
+				$(".dvEditRow").slideUp(300);
+				$("#dvShotPlaning").slideDown(300);
+			});
+			
+
+		});
+	</script>
+</body>
+</html>

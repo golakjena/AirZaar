@@ -1,0 +1,228 @@
+@media (min-width:320px) and (max-width:767px){
+	.header{ padding:15px 10px; }
+	.btnMobileNav{ display: block; }
+	.logo{ margin: 0; line-height: 20px;}
+	.topNav{ width: 100%; height: 100%; background: #eeeeee; position: fixed; right: 0; top: 48px; padding: 30px 0 0 0; display: none; z-index: 999999;}
+	.topNav li{ display: block; margin: 0 0 20px 0; text-align: center;}
+	.topNav li a{ display: block; }
+	.user{ margin: 0; display: none; }
+	
+	.mainContent{ margin: 54px 0 0 0; }
+	.btnLeftNav{ display: block; }
+	.dvLeft{ left: -250px; z-index: 99;}
+	.leftNav{ width: 250px; overflow: hidden;}
+	.leftNav li a span{ margin: 0 10px 0 0; }
+	.dvRight{ width: 100%; visibility: visible; padding: 15px; }
+	.dvRow{ padding: 30px 0 15px 0;}
+	.dvRow h3{ font-size: 18px; margin: 12px 0 0 0;}
+	.bxComponent{ width: 100%; height: auto; margin: 0 0 15px 0; padding: 30px 0;}
+	.bxComponent h4{ font-size: 36px; line-height: 38px; padding: 0 0 20px 0;}
+	.btnOperation{ position: relative; left: auto; top: auto; transform: none; -moz-transform: none; -webkit-transform: none; margin: 20px 0 0 0; opacity: 1;}
+	.shadow{ display: none; }
+	.dvOperations{ font-size: 22px; }
+	.icon{ vertical-align: middle; }
+	
+	.mapContainer{ margin: 54px 0 0 0; }
+	.projectListOuter{ height: calc(100% - 206px);}
+	.dvProjects{ width: 290px; }
+	.btnCollapsable{ left: 290px; }
+	.dvThumb{ width: 56px; height: 56px; }
+	.projectListOuter{ padding: 15px; }
+	.dvError{ padding: 30px 0 0 0; }
+	.dvError img{ width: 90px;}
+	.dvError h3{ font-size: 22px; padding: 20px 0; }
+	.dvError h4{ font-size: 14px; line-height: 22px; padding: 0 10px 20px 10px; }
+	.searchHeader{ padding: 10px; }
+	.searchHeader h3{ width: 100%; font-size: 16px; }
+	.searchBox{ width: 100%; float: left; margin: 10px 0 0 0; display: flex; display: -webkit-flex;}
+	.txtSearch{ width: 80%; }
+	.btnSearch{ padding: 10px; }
+	.btnCont{ width: auto; float: right; margin:0;}
+	.bttn{ margin: 0; width: 72px; font-size: 12px; padding: 10px 9px; }
+	.btnAddAnnotation{ top: 10px; right: 60px; }
+	.btnInfo{ top: 10px; right: 20px; }
+	.btnWeatherNav{ display: block; }
+	.bxWeatherOuter{ top: 160px; right: -224px; position: fixed; border-radius: 0 0 0 3px; -moz-border-radius: 0 0 0 3px; -webkit-border-radius: 0 0 0 3px;}
+	.bxWeather .txtDate{ padding: 5px 0 0 0; margin: 0; }
+	.bxWeather .txtTemp{ padding: 5px 0 0 0; margin: 0; }
+	.bxWeather .txtWind{ padding: 0; margin: 0; }
+
+	.drawArea{ padding: 15px 10px; }
+	.checkList{ height: 230px; overflow: hidden; overflow-y: auto; }
+	.btnDrawFlight{ padding: 10px; font-size: 12px; background: #38b9b6; border:1px #38b9b6 solid;}
+
+	.modal-header h4{ font-size: 22px; color: #101F1F; text-align: center; }
+	.formCont{ padding: 15px; }
+	.formCont .row{ margin-bottom: 0; }
+	.formCont .column{ margin-bottom: 20px; }
+	.btnRequestDrone{ margin: 10px 0 0 0; }
+
+}
+
+
+@media (min-width:768px) and (max-width:1024px){
+	.header{ padding: 10px; }
+	.logo{ margin: 8px 0 0 0; }
+	.topNav{ margin: 12px 0 0 30px; }
+	.topNav li{ margin: 0 20px 0 0; }
+	.user{ margin: 0; }
+	
+	.mainContent{ margin: 64px 0 0 0; }
+	.leftNav{ width: 220px; }
+	.leftNav li a span{ margin: 0 10px 0 0; }
+	.dvRight{ padding: 20px 30px 20px 250px; }
+
+	.bxComponent{ width: 224px; }
+	.dvOperations{ font-size: 20px; }
+	.icon{ width: 30px; height: 30px; }
+
+	.mapContainer{ margin: 64px 0 0 0; }
+	.projectListOuter{ height: calc(100% - 216px);}
+	.btnRequestDrone{ margin: 10px 0 0 0; }
+
+}	
+
+/***
+New CSS
+***/
+@media (min-width:320px) and (max-width:767px){
+	.dvShotPlanning{ width: 294px; }
+	.dvHole{ width: 72px; height: 32px; line-height: 32px; padding: 0 5px; margin: 0 5px 5px 0; font-size: 12px; }
+	.dvHole span{ top: 9px; }
+	#addNewHole .modal-dialog{ width: auto; }
+	.popBody{ padding: 15px; }
+	.btnAddHole{ width: 108px; }
+	#shotSettings .modal-dialog{ width: auto; }
+	.marginTop20{ margin: 20px 0 0 0; }
+	.dvConstraints{ width: 294px; }
+	.bxRotate{ margin: 0 0 0 10px; }
+	.dvRotate{ right: 10px; }
+	.dvAnalysisSettings{ width: 294px; }
+	.btnCollapsable{ right: -24px; }
+
+	/***
+	New CSS on 26062017
+	***/
+	.dvMeasurement.dvAnnotation{ width: 250px; }
+	.dvShotPlanning.measures{ width: 280px; }
+	.visualisationLayer{ padding: 20px; }
+	.popNewAnnotation{ width: 300px; padding: 20px 15px; }
+	.myAccountLeft{ width: 100%; padding: 30px 10px; height: auto !important;}
+	.myAccountLeft h4{ font-size: 26px; }
+	.myAccountLeft p{ font-size: 16px; }
+	.btnChangePassword{ padding: 10px 20px; }
+	.myAccountRight{ width: 100%; float: left; overflow: visible; padding: 20px; background: #fff; height: auto !important;}
+	.info{ width: 100%; }
+	.myAccountRight h3{ font-size: 16px; }
+	.btnEditInfo{ font-size: 12px; padding: 7px 20px; }
+	.infoRow h4{ font-size: 14px; }
+	.infoRow h5{ font-size: 16px; }
+	.infoRow{ margin: 0 0 20px 0; }
+	.myAccountRight h3{ margin: 0 0 20px 0; }
+	.accountDetails{ top: auto; transform: none; -moz-transform: none; -webkit-transform: none; }
+	.btnAccountClose{ background: url(../images/closeIconWhite.png) 0 0 no-repeat; }
+	.dvChangePassword .modal-dialog{ width: auto; }
+	.dvChangePassword .modal-body{ padding: 0 15px; }
+	.dvChangePassword h3{ font-size: 20px; }
+}
+@media (min-width:768px) and (max-width:1024px){
+	.myAccountLeft{ width: 300px; }
+	.myAccountLeft h4{ font-size: 26px; }
+	.myAccountLeft p{ font-size: 16px; }
+	.btnChangePassword{ padding: 10px 20px; }
+	.myAccountRight{ padding: 50px 30px; }
+	.dvEditAccount{ padding: 20px 15px; }
+}
+@media (min-width:320px) and (max-width:767px){
+	.btnPlace{ width: 120px; }
+	.btnRunShot{ height: 42px; line-height: 42px; }
+	.dvExport{ width: 120px; }
+	.dvEditAccount{ padding: 20px 0 0 0; }
+	.editCompanyCol{ width: 100%; }
+	.editCompanyCol.mMargin{ margin: 0 0 20px 0;}
+	.editCompanyRow{ margin: 0 0 20px 0; }
+}
+
+
+/***
+VBOX CSS
+***/
+@media (min-width:320px) and (max-width:767px){
+	.dvUpload{ padding: 20px 10px; }
+	.queFiles{ padding: 20px; }
+	.dvConstraints.vbox{ width: 290px; }
+	.dvProcess{ padding: 20px 0 0 0; }
+	.processRow{ margin: 0 0 20px 0; }
+	.modalHeader{ padding: 20px 10px; }
+	.modalHeader .modalTitle{ font-size: 20px; margin: 0 0 5px 0; }
+	.modalHeader h5{ font-size: 14px;}
+	.btnGraphDelete{ width: 86px; vertical-align: top;}
+	.btnGraphDone{ width: 86px; vertical-align: top;}
+	.btnGraphUndo{ width: 86px; vertical-align: top;}
+	.btnGraphDelete, .btnGraphDone, .btnGraphUndo{ margin: 0; }
+}
+@media (min-width:768px) and (max-width:1024px){
+	.btnGraphDelete, .btnGraphDone, .btnGraphUndo{ margin: 0 10px; }
+
+}
+
+
+
+/***
+Upload Process
+***/
+@media (min-width:320px) and (max-width:767px){
+	.dvUploadProcess{ padding: 10px; margin: 54px 0 0 0; position: relative; top: auto; left: auto; bottom: auto; right: auto;}
+	.processBox{ padding: 10px; position: relative; top: auto; left: auto; bottom: auto; right: auto; width: 100%; height: auto; overflow: visible;}
+	.processBox h3{ font-size: 22px; margin: 0 0 20px 0; }
+	.processTab ul li{ font-size: 14px; }
+	.processContent{ padding: 20px 0; }
+	.frmLabel{ font-size: 15px; }
+	.txtLink{ font-size: 14px; }
+	.frmProssesRow{ margin: 0 0 20px 0; }
+	.txtInput2{ font-size: 14px; }
+	.processContent h4{ font-size: 15px; }
+	.processContent h4 span{ font-size: 14px; }
+	.processContent h5{ font-size: 14px; }
+	.top50{ padding: 30px 0 0 0; }
+	.gcpData{ border:0; padding: 0; }
+	.dragDropCont p{ font-size: 14px; }
+	.dvSwitchWrapLeft{ width: 70%; }
+	.dvSwitchWrapRight{ width: 30%; }
+	.pTop20{ padding: 20px 0 0 0; }
+	.dragDropCont2{ margin: 0; padding: 20px 10px; }
+	.dragDropCont2 p{ font-size: 15px; }
+	.loadingCont{ padding: 20px 0 0 0; }
+	.imageHeader{ padding: 10px; }
+	.imgNum{ width: 100%; font-size: 16px; }
+	.imgDetails{ width: 100%; float: left; }
+	.imgDetails{ width: 100%; float: left; }
+	.removeImg{ margin: 0; padding: 0 5px 0 25px;}
+	.path > img{ max-width: 90px; }
+	.backBttn{ padding: 10px 30px; }
+	.btnNext{ padding: 12px 30px; }
+	.requestDetails{ padding: 10px 0 0 0; }
+	.requestDetailsCol{ padding: 0 10px; width: 100%; border-right:0; border-bottom:1px #eee solid;}
+	.requestDetailsCol h6{ font-size: 14px; }
+	.requestDetailsCol p{ font-size: 14px; }
+	.txtUploadingProgress{ padding: 20px 0; }
+	.txtUploading{ font-size: 20px; }
+	.txtUploadingProgress p{ font-size: 13px; }
+	.txtFilename2{ font-size: 14px; }
+	.progressBar2{ height: 10px; }
+	.progressBarInner2{ height: 10px; }
+	.automaticallySubmited{ margin: 0; padding: 15px; }
+	.submitedLeft{ font-size: 12px; }
+	.btnNext.largeBtn{ margin: 5px; }
+	.successful h2{ font-size: 22px; padding: 10px 0 10px 0; }
+	.successful p{ font-size: 14px; }
+
+}
+@media (min-width:768px) and (max-width:1024px){
+	.dvUploadProcess{ padding: 40px; margin: 64px 0 0 0; position: relative; top: auto; left: auto; bottom: auto; right: auto;}
+	.processBox{ position: relative; top: auto; left: auto; bottom: auto; right: auto; width: 100%; height: auto; overflow: visible;}
+
+	.processContent{ padding: 40px 20px; }
+	.requestDetailsCol{ padding: 0 10px; }
+
+}

@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>AirZaar</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/jquery-ui.css">
+	<link rel="stylesheet" href="css/bootstrap-select.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/responsive.css">
+	<script src="js/modernizr-custom.js"></script>
+	<!--[if lt IE 9]>
+	<script src="js/html5shiv.js"></script>
+	<![endif]-->
+</head>
+<body>
+	<div class="wrapper clearfix">
+		<div class="searchHeader clearfix">
+			<h3><a href="#">VBOX</a></h3>
+			<span class="location">Troy Missouri</span>
+		</div>
+		<div class="innerContainer clearfix">
+			<div class="dvConstraints vbox">
+				<h3>VBOX</h3>
+				<a href="javascript:void(0);" class="btnSideBar"><span></span></a>
+				<a class="btnCloseSlidebar" href="javascript:void(0);"><img src="images/popClose.png" alt=""></a>
+				<div class="uploadRow clearfix">
+					<a class="activeData" href="#dvUpload">Upload</a>
+					<a href="#dvLayer">Layer</a>
+				</div>
+				<div class="uploadWraper clearfix">
+					<div class="dvUpload" id="dvUpload">
+						<a class="btnFileUpload" href="#">&nbsp;</a>
+						<div class="dvProcess clearfix">
+							<div class="processRow">
+								<div class="txtFilename"><span>test10.vbo</span> Saving offline...</div>
+								<div class="progressBar">
+									<div class="progressBarInner"></div>
+								</div>
+							</div>
+							<div class="processRow">
+								<div class="txtFilename"><span>test9.vbo</span> Processing...</div>
+								<div class="progressBar">
+									<div style="width:90%;" class="progressBarInner"></div>
+								</div>
+							</div>
+							<div class="processRow">
+								<div class="txtFilename"><span>test8.vbo</span> Reading...</div>
+								<div class="progressBar">
+									<div style="width:10%;" class="progressBarInner"></div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="dvUpload" id="dvLayer">
+						<div class="layerRow clearfix">
+							<select name="" class="selectpicker" id="">
+								<option value="">test10.vbo</option>
+							</select>
+						</div>
+						<div class="layerRow clearfix">
+							<label class="lbl">Expression</label>
+							<div class="dvExpression clearfix">
+								<a href="#" class="qMark">&nbsp;</a>
+								<div class="bxExpression">
+									<input type="text" placeholder="double_speed=2*velocity">
+								</div>
+								<a href="#" class="plusMark">&nbsp;</a>
+							</div>
+						</div>
+						<div class="layerRow velocity clearfix">
+							<div class="colVelocity2">
+								<select class="selectpicker">
+									<option value="">Velocity</option>
+								</select>
+							</div>
+							<div class="colVelocity2">
+								<select class="selectpicker">
+									<option value="">Viridis</option>
+								</select>
+							</div>
+							<div class="colVelocity">
+								<select class="selectpicker">
+									<option value="">Map</option>
+								</select>
+							</div>
+						</div>
+						<div class="layerGraph clearfix">
+							<h4><span>Saturday, Jan 1st 2017</span>, 11:59:33 pm</h4>
+							<div class="layerGraphCont">
+								<a href="#" class="graphEditIcon" data-toggle="modal" data-target="#myModal"><img src="images/Edit.png" alt=""></a>
+								<a href="#" class="graphZoomIcon"><img src="images/zoomIcon.png" alt=""></a>
+								<img src="images/layerGraph.png" alt="">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="dvmapView">
+				<ul class="mapView">
+					<li><a href="#">2D Map</a></li>
+					<li><a class="activeView" href="#">3D Map</a></li>
+				</ul>
+				<a class="mapOptions" href="#"><img src="images/mapOptions.png" alt=""></a>
+			</div>
+			<iframe class="processDataMap" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14017.88367382519!2d77.07567357374093!3d28.555618519168867!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d1b9993a248df%3A0x28f954cbf617fd67!2sTerminal+3%2C+Indira+Gandhi+International+Airport%2C+New+Delhi%2C+Delhi+110037!5e0!3m2!1sen!2sin!4v1481772715816" width="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
+		</div>
+	</div>
+	
+	<!--Edit Graph Modal -->
+	<div id="myModal" class="modal fade" role="dialog">
+		<div class="modal-dialog modal-lg">
+			<div class="modal-content">
+				<div class="modalHeader clearfix">
+					<a href="javascript:void(0);" class="btnModalClose" data-dismiss="modal"><img src="images/closeIcon.png" alt=""></a>
+					<h4 class="modalTitle">Edit Graph</h4>
+					<h5>Make slection on graph to delete</h5>
+				</div>
+				<div class="modal-body clearfix">
+					<div class="editGraph clearfix">
+						<img src="images/editGraph.png" alt="">
+					</div>
+					<div class="btnRow clearfix">
+						<a class="btnGraphDelete" href="#">Delete</a>
+						<a class="btnGraphDone" href="#">Done</a>
+						<a class="btnGraphUndo" href="#">Undo</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="js/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/bootstrap-select.js"></script>
+	<script src="js/jquery-ui.js"></script>
+	<script src="js/jquery.airZaar.js"></script>
+	<script type="text/javascript">
+		//Accordiaon
+		function uploadAccord(){
+			$(".dvUpload").eq(0).slideDown(300);
+			$(".uploadRow a").eq(0).addClass("activeData");
+			$(".uploadRow a").each(function(){
+				$(this).on("click", function(){
+					var target = $(this).attr("href");
+					$(".activeData").removeClass("activeData");
+					$(this).addClass("activeData");
+					$(".dvUpload").slideUp(300);
+					$(target).slideDown(300);
+					return false;
+				});
+			});
+		}
+
+	    $(function(){
+	    	uploadAccord();
+	    });
+    </script>
+</body>
+</html>

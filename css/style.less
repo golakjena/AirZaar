@@ -1,0 +1,303 @@
+@color_1: #4A4A4A;
+@color_2: #101F1F;
+@color_3: rgba(16,31,31, 0.3);
+@color_4: rgba(16,31,31, 1);
+@color_5: #fff;
+@color_6: #38B9B6;
+@font_family_1: 'san_francisco_textsemibold', Arial;
+@border_color_1: #3AC0BC;
+
+/***
+VBOX CSS
+***/
+.dvConstraints.vbox {
+	width: 370px;
+	padding: 20px 0;
+	min-height: 100%;
+}
+.uploadRow {
+	background: #fff;
+	border-top: 1px rgba(151,151,151, 0.15) solid;
+	a {
+		display: inline-block;
+		width: 50%;
+		text-align: center;
+		padding: 10px 0;
+		float: left;
+		font-size: 16px;
+		color: @color_1;
+		border-bottom: 2px rgba(151,151,151, 0.15) solid;
+		&:hover {
+			border-bottom: 2px #38B9B6 solid;
+		}
+	}
+	a.activeData {
+		border-bottom: 2px #38B9B6 solid;
+	}
+}
+.dvUpload {
+	display: none;
+	padding: 20px;
+}
+.btnFileUpload {
+	background: #fff url(../images/txtUpload.png) center center no-repeat;
+	border: 2px #DEDEDE dashed;
+	height: 200px;
+	border-radius: 8px;
+	-moz-border-radius: 8px;
+	-webkit-border-radius: 8px;
+	text-align: center;
+	display: block;
+}
+#thefiles {
+	opacity: 0;
+}
+.layerRow {
+	margin: 0 0 20px 0;
+}
+.velocity {
+	display: flex;
+	display: -webkit-flex;
+	justify-content: space-between;
+	-webkit-justify-content: space-between;
+}
+.colVelocity2 {
+	flex: 2;
+	padding: 0 10px 0 0;
+}
+.colVelocity {
+	flex: 1;
+}
+.layerGraph {
+	margin: 30px 0 0 0;
+	h4 {
+		font-size: 14px;
+		color: @color_1;
+		margin: 0 0 20px 0;
+		span {
+			font-family: @font_family_1;
+		}
+	}
+}
+.layerGraphCont {
+	position: relative;
+}
+.graphEditIcon {
+	display: inline-block;
+	position: absolute;
+	top: 8px;
+	right: 10px;
+}
+.graphZoomIcon {
+	display: inline-block;
+	position: absolute;
+	top: 45px;
+	right: 10px;
+}
+.dvExpression {
+	display: flex;
+	display: -webkit-flex;
+	justify-content: space-between;
+	-webkit-justify-content: space-between;
+	border: 1px #E4E4E4 solid;
+	border-radius: 4px;
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	overflow: hidden;
+}
+.qMark {
+	display: inline-block;
+	width: 34px;
+	height: 34px;
+	background: #F3F3F3 url(../images/questionMark.png) center center no-repeat;
+	flex: 1;
+	border-right: 1px #E4E4E4 solid;
+}
+.plusMark {
+	display: inline-block;
+	width: 34px;
+	height: 34px;
+	background: #F3F3F3 url(../images/inputPlusIcon.png) center center no-repeat;
+	flex: 1;
+	border-left: 1px #E4E4E4 solid;
+}
+.bxExpression {
+	flex: 9;
+	input {
+		background: #fff;
+		border: 0;
+		width: 100%;
+		padding: 8px 10px;
+		outline: 0;
+	}
+}
+.modalHeader {
+	text-align: center;
+	padding: 30px 20px;
+	.modalTitle {
+		font-size: 30px;
+		margin: 0 0 10px 0;
+		color: @color_2;
+	}
+	h5 {
+		font-size: 16px;
+		color: @color_2;
+	}
+}
+.btnModalClose {
+	display: inline-block;
+	position: absolute;
+	right: 20px;
+	top: 30px;
+}
+.editGraph {
+	text-align: center;
+}
+.btnRow {
+	text-align: center;
+	margin: 30px 0;
+}
+.btnGraphDelete {
+	display: inline-block;
+	background: #fff url(../images/deleteIcon.png) 10px 10px no-repeat;
+	width: 100px;
+	height: 42px;
+	line-height: 42px;
+	border: 1px #9B9B9B solid;
+	border-radius: 4px;
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	font-size: 14px;
+	color: @color_3;
+	font-family: @font_family_1;
+	margin: 0 20px;
+	padding: 0 0 0 20px;
+	vertical-align: top;
+	&:hover {
+		border-color: @border_color_1;
+		color: @color_4;
+		background: #fff url(../images/deleteIcon_hover.png) 10px 10px no-repeat;
+	}
+}
+.btnGraphDone {
+	display: inline-block;
+	display: inline-block;
+	background: #D5D5D5;
+	width: 266px;
+	height: 42px;
+	line-height: 42px;
+	border: 1px #D5D5D5 solid;
+	border-radius: 4px;
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	font-size: 18px;
+	color: @color_5;
+	font-family: @font_family_1;
+	margin: 0 20px;
+	vertical-align: top;
+	&:hover {
+		background: #3AC0BC;
+		border-color: @border_color_1;
+		color: @color_5;
+	}
+}
+.btnGraphUndo {
+	display: inline-block;
+	display: inline-block;
+	background: #fff url(../images/undoIcon.png) 10px 10px no-repeat;
+	width: 100px;
+	height: 42px;
+	line-height: 42px;
+	border: 1px #9B9B9B solid;
+	border-radius: 4px;
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	font-size: 14px;
+	color: @color_3;
+	font-family: @font_family_1;
+	margin: 0 20px;
+	padding: 0 0 0 20px;
+	vertical-align: top;
+	&:hover {
+		border-color: @border_color_1;
+		color: @color_4;
+		background: #fff url(../images/undoIcon_hover.png) 10px 10px no-repeat;
+	}
+}
+.queFiles {
+	border: 2px #DEDEDE dashed;
+	border-radius: 8px;
+	-moz-border-radius: 8px;
+	-webkit-border-radius: 8px;
+	text-align: center;
+	display: block;
+	padding: 20px 30px;
+}
+.fileRow {
+	padding: 10px 0;
+	border-bottom: 1px #E3E3E3 solid;
+}
+.fileRow.noBdr {
+	border: 0;
+}
+.fileName {
+	display: inline-block;
+	background: url(../images/fileIcon.png) 0 0 no-repeat;
+	padding: 0 0 3px 30px;
+	font-size: 16px;
+	color: @color_1;
+	float: left;
+}
+.fileRemove {
+	font-family: @font_family_1;
+	display: inline-block;
+	font-size: 14px;
+	color: @color_6;
+	float: right;
+	text-decoration: underline;
+}
+.submitFiles {
+	display: block;
+	background: #38B9B6;
+	padding: 11px 0;
+	color: @color_5;
+	font-size: 15px;
+	outline: 0;
+	border: 0;
+	border-radius: 4px;
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	font-family: @font_family_1;
+	margin: 20px 0 0 0;
+}
+.dvProcess {
+	padding: 50px 0 0 0;
+}
+.processRow {
+	margin: 0 0 30px 0;
+}
+.txtFilename {
+	font-size: 13px;
+	color: @color_1;
+	margin: 0 0 10px 0;
+	span {
+		font-family: @font_family_1;
+	}
+}
+.progressBar {
+	background: #F3F3F3;
+	border-radius: 4px;
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	overflow: hidden;
+	height: 7px;
+}
+.progressBarInner {
+	width: 40%;
+	height: 7px;
+	background: rgb(56,185,182);
+	background: -moz-linear-gradient(left, rgba(56,185,182,1) 0%, rgba(105,221,203,1) 100%);
+	background: -webkit-linear-gradient(left, rgba(56,185,182,1) 0%,rgba(105,221,203,1) 100%);
+	background: linear-gradient(to right, rgba(56,185,182,1) 0%,rgba(105,221,203,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#38b9b6', endColorstr='#69ddcb',GradientType=1 );
+}
